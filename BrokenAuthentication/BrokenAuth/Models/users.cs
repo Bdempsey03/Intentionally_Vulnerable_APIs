@@ -2,7 +2,7 @@
 
 namespace BrokenAuth.Models
 {
-    public class users
+    public class Users
     {
         [Key]
         public int userId { get; set; }
