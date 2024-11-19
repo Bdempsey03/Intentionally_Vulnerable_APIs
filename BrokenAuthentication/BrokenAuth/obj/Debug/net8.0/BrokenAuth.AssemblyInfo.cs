@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BrokenAuth")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c0e6ebb1a6358211948f3859e9201cc97b25129")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3321e43541ac43f8c901af0bf0a9f2848f51ac10")]
 [assembly: System.Reflection.AssemblyProductAttribute("BrokenAuth")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BrokenAuth")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
