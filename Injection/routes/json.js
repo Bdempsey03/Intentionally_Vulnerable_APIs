@@ -5,4 +5,4 @@ router.get("/", (req,res)=>{
     const data = "Hello JSON";
     res.json({"message": data});
 });
-export default (router)
+module.exports = router;

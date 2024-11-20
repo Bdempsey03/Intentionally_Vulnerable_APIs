@@ -35,4 +35,4 @@ function echoAll(req, res){
     }
     );
 }
-export default (router)
+module.exports = router;

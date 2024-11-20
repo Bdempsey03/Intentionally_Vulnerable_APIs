@@ -6,5 +6,5 @@ req.time = new Date().toString();
 next();
 }, (req, res) => {
     res.json({ "time": req.time });
-})
-export default (router)
+});
+module.exports = router;

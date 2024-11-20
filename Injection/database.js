@@ -17,12 +17,12 @@ export async function getUsers() {
 export async function makeUser(firstName, lastName){
     const status = await pool.query(`INSERT INTO users (firstName, lastName)  VALUES ('${firstName}', '${lastName}')`);
     // const status = await pool.query(`INSERT INTO users (?, ?)  VALUES ('A', 'Virus')`, [firstName, lastName]);
-
+    return getUsers()
 }
-// const [rows] = await pool.query(
-//     "INSERT INTO users (firstName, lastName)  VALUES ('A', 'Virus')")
+export async function anyQuery(query){
+    const status = await pool.query(`${query}`);
+    return getUsers()
+}
 
-// const stat = await makeUser("LeBron", "James");
-// console.log(stat);
 const users = await getUsers();
 console.log(users);

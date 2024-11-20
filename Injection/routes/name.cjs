@@ -12,7 +12,7 @@ function nameReply(req, res) {
 
     res.format({
 
-        'test/plain': () => {
+        'text/plain': () => {
             res.send(`name:${firstName} ${lastName}`)},
 
             'text/html': () => {
@@ -29,4 +29,4 @@ function nameReply(req, res) {
             }
     });
 }
-export default (router)
+module.exports = router;
