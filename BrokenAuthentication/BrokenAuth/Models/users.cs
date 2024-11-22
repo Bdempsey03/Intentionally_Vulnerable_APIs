@@ -6,7 +6,9 @@ namespace BrokenAuth.Models
     {
         [Key]
         public int userId { get; set; }
-
-        public String username { get; } = "";
+        [Required]
+        public String username { get; set; } = "";
+        [Required]
+        public bool isAdmin { get; set; } = true;
     }
 }
