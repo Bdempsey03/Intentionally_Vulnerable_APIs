@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "Models\\users.cs",
               "ToolTip": "C:\\Users\\spenc\\Documents\\UNBC\\FALL 2024\\CPSC 499\\Repository\\Intentionally_Vulnerable_APIs\\BrokenAuthentication\\BrokenAuth\\Models\\users.cs",
               "RelativeToolTip": "Models\\users.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAyAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T18:05:03.297Z",
               "IsPinned": true,
@@ -56,8 +56,7 @@
               "RelativeToolTip": "Controllers\\UsersController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T18:28:41.246Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T18:28:41.246Z"
             },
             {
               "$type": "Document",
@@ -69,8 +68,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-21T18:10:01.699Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T18:10:01.699Z"
             },
             {
               "$type": "Document",
@@ -82,8 +80,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T17:29:07.587Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T17:29:07.587Z"
             },
             {
               "$type": "Document",
@@ -95,8 +92,7 @@
               "RelativeToolTip": "Models\\ApiDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T17:25:39.788Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T17:25:39.788Z"
             }
           ]
         }
