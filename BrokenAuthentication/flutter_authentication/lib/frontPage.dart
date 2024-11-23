@@ -35,7 +35,10 @@ class _FrontPageState extends State<FrontPage> {
         backgroundColor: Colors.blueAccent,
         foregroundColor: Colors.black,
       ),
-      body: Column(
+      body: Center(
+        child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           ElevatedButton(
             onPressed: () {
@@ -44,6 +47,7 @@ class _FrontPageState extends State<FrontPage> {
                 MaterialPageRoute(builder: (context) => SignUp()));
             }, 
             child: const Text('Sign up'),),
+          const SizedBox(height: 10,),
           ElevatedButton(
             onPressed: () {
               Navigator.push(
@@ -51,6 +55,6 @@ class _FrontPageState extends State<FrontPage> {
                 MaterialPageRoute(builder: (context) => AdminPage()));
             }, 
             child: const Text('Admin Access'),),
-        ],));
+        ],)));
   }
 }

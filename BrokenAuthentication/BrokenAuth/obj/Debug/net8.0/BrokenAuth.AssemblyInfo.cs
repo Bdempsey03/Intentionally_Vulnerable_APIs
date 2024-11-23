@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BrokenAuth")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94e807c55db28028814206f097b1123e4331a9b3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be263afd91a82928662f2745a80e43a37fdbf031")]
 [assembly: System.Reflection.AssemblyProductAttribute("BrokenAuth")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BrokenAuth")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

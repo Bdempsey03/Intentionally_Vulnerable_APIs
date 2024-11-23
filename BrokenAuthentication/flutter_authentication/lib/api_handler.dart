@@ -29,4 +29,48 @@ class ApiHandler{
 
     return data;
   }
+
+  Future<http.Response> addUser(String username, String password) async{
+    final uri = Uri.parse(baseUri);
+    late http.Response response;
+
+    try{
+      response = await http.post(
+        uri,
+        headers: <String, String>{
+          'Content-type' : 'application/json; charset=UTF-8'
+        },
+        body: json.encode(<String, dynamic>{
+          'username': username,
+          'password': password,
+        }),
+        );
+    } catch(e){
+      return response;
+    }
+
+    return response;
+  }
+
+  Future<User> getUserById({required int userId}) async{
+    final uri = Uri.parse(baseUri);
+    User? user;
+
+    try{
+      final response = await http.get(
+        uri,
+        headers: <String, String>{
+          'Content-type' : 'application/json; charset=UTF-8'
+        },
+      );
+
+      if(response.statusCode >= 200 && response.statusCode <= 299){
+        final Map<String, dynamic> jsonData = json.decode(response.body);
+        user = User.fromJson(jsonData);
+      }
+    } catch(e){
+        return user!;
+    }
+    return user!;
+  }
 }

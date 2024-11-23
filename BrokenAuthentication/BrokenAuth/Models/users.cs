@@ -9,6 +9,8 @@ namespace BrokenAuth.Models
         [Required]
         public String username { get; set; } = "";
         [Required]
+        public String password { get; set; } = "";
+        [Required]
         public bool isAdmin { get; set; } = true;
     }
 }
