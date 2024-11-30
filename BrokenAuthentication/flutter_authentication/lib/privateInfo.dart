@@ -12,11 +12,27 @@ class PrivateInfoPage extends StatelessWidget {
         backgroundColor: Colors.blueAccent,
         foregroundColor: Colors.black,
       ),
-      body: Center(
-        child: Column(
+      body: Column(
           children: [
-            const Text("John Doe: 123 Main Street"),
-            const Text("Jane Doe: 456 River Road"),
-          ],),));
+            ListView(
+              shrinkWrap: true,
+              padding: const EdgeInsets.all(8),
+              children: [
+                Container(
+                  height: 50,
+                  child: const Center(child: const Text('Jane Doe - 123 Main Street'))),
+                  Container(
+                  height: 50,
+                  child: const Center(child: const Text('John Doe - 456 Integra Street'))),
+                  Container(
+                  height: 50,
+                  child: const Center(child: const Text('Charlie Daniels - 999 Bravo Street'))),
+                  Container(
+                  height: 50,
+                  child: const Center(child: const Text('Dan Moors - 78 Light Place'))),
+                
+              ]
+            )
+          ],),);
   }
 }
