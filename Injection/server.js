@@ -27,7 +27,7 @@ app.post("/users", async (req, res) => {
     const user =  await makeUser(firstName, lastName);
     res.status(201).send(user);
 })
-app.post("/query", async (req, res) => {//OBVIOUSLY BAD
+app.post("/anyQuery", async (req, res) => {//OBVIOUSLY BAD
     const {query} = req.body;
     const user =  await anyQuery(query);
     res.status(201).send(user);
@@ -35,6 +35,7 @@ app.post("/query", async (req, res) => {//OBVIOUSLY BAD
 
 app.options("*", (req, res, next)=>{
     res.header('Access-Control-Allow-Origin', "*");
+    res.header('multipleStatements','true');
     res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,OPTIONS');
     res.header('Access-Control-Allow-Headers', 'Authorization, Content-Length, X-Requested-With');
     res.send(200);
