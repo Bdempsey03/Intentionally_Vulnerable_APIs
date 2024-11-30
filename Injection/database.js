@@ -6,7 +6,8 @@ const pool = mysql.createPool({
     host: process.env.MYSQL_HOST,
     user: process.env.MYSQL_USER,
     password: process.env.MYSQL_PASSWORD,
-    database: process.env.MYSQL_DATABASE
+    database: process.env.MYSQL_DATABASE,
+    multipleStatements: true
 }).promise()
 
 export async function getUsers() {
@@ -15,7 +16,7 @@ export async function getUsers() {
 }
 
 export async function makeUser(firstName, lastName){
-    const status = await pool.query(`INSERT INTO users (firstName, lastName)  VALUES ('${firstName}', '${lastName}')`);
+    const status = await pool.query(` INSERT INTO users (firstName, lastName) VALUES ('${firstName}', '${lastName}');`);
     // const status = await pool.query(`INSERT INTO users (?, ?)  VALUES ('A', 'Virus')`, [firstName, lastName]);
     return getUsers()
 }
